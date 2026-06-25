@@ -1,4 +1,2 @@
-$content = "1.4.0`nhttps://github.com/urcevfedor6-ctrl/docgen-releases/releases/download/v1.4.0/DocGen_Setup_v1.4.0.exe"
-$b64 = [Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes($content))
-$sha = (gh api repos/urcevfedor6-ctrl/docgen-releases/contents/version.txt | ConvertFrom-Json).sha
-gh api repos/urcevfedor6-ctrl/docgen-releases/contents/version.txt --method PUT --field message="v1.4.0" --field content=$b64 --field sha=$sha
+1.4.0
+https://github.com/urcevfedor6-ctrl/docgen-releases/releases/download/v1.4.0/DocGen_Setup_v1.4.0.exe
